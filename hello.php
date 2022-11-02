@@ -1,7 +1,10 @@
+<!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
-<h1>Hello World<h1>
-</body>
+    <body>
+
+    <h1>HTML First Program</h1>
+
+    <p>HTML Hello World.</p>
+
+    </body>
 </html>
