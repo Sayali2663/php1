@@ -1,0 +1,36 @@
+react app open krun ti file open to folder open kraych
+app.js mdhe state cha code
+count.jsx mdhe prop code
+ app.js
+
+import './App.css';
+import {useState} from "react";
+import Count from "./Count.jsx";
+function App() {
+  const [count, updateCount] = useState(0);
+  function inc(){
+    updateCount(count+1);
+  }
+  return (
+    <div className="App">
+        <button onClick={inc}>+</button>
+        <Count text="sayali" count={count}/>
+    </div>
+  );
+}
+
+
+export default App;
+
+count.jsx file=
+const Count = (props) => {
+    return <div>
+
+        <span>Count: {props.count}</span>
+        {props.text}
+    </div>
+}
+
+export default Count;
+
+run npm start command in terminal

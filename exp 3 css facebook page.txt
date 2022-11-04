@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Facebook</title>
+        <style>
+            /* Universal Selector => Select all elements */
+            *{
+
+            }
+            /* Element Selector => Select html element */
+            body{
+                background-color: rgb(242, 242, 242);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            /* Id selector => Select id and starts with # */
+            #title{
+                color: blue;
+            }
+            /* Class selector => select by classname and starts . */
+            .loginForm{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 300px;
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            .loginForm input{
+                padding: 10px;
+            }
+
+            .loginForm *{
+                margin: 5px;
+                width: 100%;
+                border-radius: 4px;
+                font-size: 20px;
+            }
+
+            button{
+                background-color: rgb(26, 113, 244);
+                color: white;
+                border-color: transparent;
+                padding: 5px;
+            }
+
+            #forget{
+                text-align: center;
+            }
+
+            #btnCreate{
+                background-color: rgb(41, 160, 41);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">Facebook</h1>
+        <p>Facebook helps you connect and <br> share with the people in your life.</p>
+        <form class="loginForm" action="">
+            <input id="email" type="text" placeholder="Enter your email">
+            <input class="password" type="password" placeholder="Enter your password">
+            <button id="login">Login</button>
+            <a id="forget" href="">Forget Password</a>
+            <hr>
+            <button id="btnCreate">Create an Account</button>
+        </form>
+        <script>
+            const form = document.querySelector("form");
+            form.addEventListener("submit", e => {
+                e.preventDefault();
+            })
+
+            const btn = document.querySelector("#login");
+            btn.addEventListener("click", (event) => {
+                const inputEmail = document.getElementById("email");
+                const email = inputEmail.value;
+                const inputPassword = document.querySelector(".password");
+                const password = inputPassword.value;
+                
+                if(email.length == 0){
+                    alert("Email cannot be empty");
+                }else if(password.length <= 6){
+                    alert("Password length must be more than 6")
+                }
+
+            })
+        </script>
+    </body>
+</html>

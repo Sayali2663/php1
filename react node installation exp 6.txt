@@ -1,0 +1,30 @@
+react installation steps
+
+first install node js go to browser and search node download
+after installation complete of node js
+ go to cmd
+check node version
+node -v
+
+
+on cmd run command
+install -g create-react-app
+ npm view react version
+
+next
+
+mkdir reactapp
+
+cd reactapp
+
+create-react-app reactfirstapp 
+
+jar cmd mdhe hot nsel tr dusri method use karaychi
+
+c mdhe ek folder banvaycch tya folder la
+powershell mdhe open  karaych
+nntr command takaychi
+
+npx create-react-app firstapp
+
+nntr terminal mdhe npm start lihaych
